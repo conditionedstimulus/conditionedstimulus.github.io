@@ -364,7 +364,7 @@ Settings:
 #### Results
 Let's  compare the results.
 
-<img src="/images/P_simplification.png" height="140" width="600"> 
+<img src="/images/results.png" height="140" width="140"> 
 <br>
 
 

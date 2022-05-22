@@ -22,7 +22,7 @@ title: Zalpaca
 email: hajdudavid@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here you will find posts regarding ML/DL.
-baseurl: "/blog2" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://conditionedstimulus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: davidhajdu_unk
 github_username: conditionedstimulus
