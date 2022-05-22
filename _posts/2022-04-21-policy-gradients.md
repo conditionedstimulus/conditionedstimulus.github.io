@@ -354,7 +354,7 @@ for _ in range(10000):
                 rewards.append(reward)
 {% endhighlight %}
 
-The whole implementation is avaliable on my [github page](https://github.com/conditionedstimulus/RL_algos/blob/main/VPG.py)
+The whole implementation is avaliable on my [Github page](https://github.com/conditionedstimulus/RL_algos/blob/main/VPG.py)
 
 Settings:
 1. The number of episodes: 2000
