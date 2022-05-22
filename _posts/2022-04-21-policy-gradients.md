@@ -364,11 +364,12 @@ Settings:
 #### Results
 Let's  compare the results.
 
+<img src="/images/P_simplification.png" height="140" width="600"> 
+<br>
 
 
 
 
-
-As you can see VPG is much more efficient than the original REINFORCE.
+As you can see VPG learned faster and it was more stable than the original REINFORCE.
 
 I hope you found interesting this explanation of these state-of-art solutions, if you spotted any mistakes or you have any suggestions or you just want to chat then drop an e-mail to me.
