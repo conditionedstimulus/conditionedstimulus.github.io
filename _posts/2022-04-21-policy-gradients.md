@@ -364,7 +364,7 @@ Settings:
 #### Results
 Let's  compare the results.
 
-<img src="/images/results.png" height="140" width="140"> 
+<img src="/images/results.png" height="264" width="380"> 
 <br>
 
 
