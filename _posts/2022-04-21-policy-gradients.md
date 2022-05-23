@@ -12,8 +12,7 @@ If you are not familiar with the foundations of reinforcement learning then you 
 
 ###  **Introduction**
 
-*If you are not familiar with the foundations of reinforcement learning then you should check one of these pages: Open AI’s page, Lilian Wang’s blog
-In a nutshell, Policy Gradient methods are part of the reinforcement learning family where the agent learns the policy directly. There are value-based methods where the agent learns the value of certain action on a certain state, and it chooses the action with the maximum value over the other actions. In PG you don’t calculate any state or state-action value, the agent learns directly the policy based on the value of the reward. It increases or decreases the certain action probability and of course, it pushes the other available action probabilities to the opposite direction. Let’s clarify with an example: the environment is a grid table and there are 4 available actions (up, left, right, down) and you randomly choose different states on this surface. After taking 4 steps you can’t move further because you have reached a terminal state, and let’s assume that one is the goal state and you get a reward which is 10. You wrote down every state's names and the actions that you chose and of course, you also know the value of the reward which was positive, so you conclude that your choice can be a good path and you should follow it in the future. This is a very simple but valid example if the environment is discrete, but life is more complex than this (even Super Mario).*
+*In a nutshell, Policy Gradient (PG) methods are part of the reinforcement learning family where the agent learns the policy directly. There are value-based methods (VB) where the agent learns the value of certain action on a certain state, and it chooses the action with the maximum value over the other actions. In PG you don’t calculate any state or state-action value, the agent learns directly the policy based on the value of the reward. It increases or decreases the certain action probability and of course, it pushes the other available action probabilities to the opposite direction. Let’s clarify with an example: the environment is a grid table and there are 4 available actions (up, left, right, down) and you randomly choose different states on this surface. After taking 4 steps you can’t move further because you have reached a terminal state, and let’s assume that one is the goal state and you get a reward which is 10. You wrote down every state's names and the actions that you chose and of course, you also know the value of the reward which was positive, so you conclude that your choice can be a good path and you should follow it in the future. This is a very simple but valid example if the environment is discrete, but life is more complex than this (even Super Mario).*
 
 As I mentioned above in the introduction: VBs learn the policy indirectly (it learns the action-state values and map a policy from it).
 <br>
@@ -361,15 +360,17 @@ Settings:
 2. The value of gamma: 0.99
 3. Policy networks optimizer: Adam (Value network: RMSprop)
 
-#### Results
-Let's  compare the results.
+### **Let's  compare the results**
 
-<img src="/images/results.png" height="264" width="380"> 
+<img src="/images/rpe_res.png" height="441" width="431"> 
+<br>
+It looks a bit messy but I think you can see the differences. VPG reached faster the maximum reward of the environment (200) than REINFORCE. However, in this simple environment both approaches work well. There are huge drops on the chart thanks to the random steps, this is the way how the agent explores the environment. With time the optimization process improves the model performances and these drops are smaller and smaller because the probability of the good actions are higher every episode. 
+<br>
+The visualization of the improvement is clearer if we follow the process on a chart where the rewards are adjusted with a simple moving average (in this case the window size is only 10). 
+<br>
+<br>
+<img src="/images/sma_res.png" height="278" width="389"> 
 <br>
 
-
-
-
-As you can see VPG learned faster and it was more stable than the original REINFORCE.
 
 I hope you found interesting this explanation of these state-of-art solutions, if you spotted any mistakes or you have any suggestions or you just want to chat then drop an e-mail to me.
