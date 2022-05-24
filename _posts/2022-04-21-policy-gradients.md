@@ -19,7 +19,7 @@ As I mentioned above in the introduction: VBs learn the policy indirectly (it le
 Formally: $$\pi(s) = argmax_a Q(s,a)$$. 
 
  In contrast, policy-based methods learn the policies directly, which can be more efficient in many cases rather than calculating the value of the action over all the other actions. For instance, in an environment that contains high-dimensional or continuous action spaces. 
-Another big advantage is that policy-based approaches can learn stochastic policies, which make sense in many cases, think about a partially observable environment (e.g: the foggy lake) or in non-cooperative games (Nash equilibrium.g: rock-paper-scissors).
+Another big advantage is that policy-based approaches can learn stochastic policies, which make sense in many cases, think about a partially observable environment (e.g: the foggy lake) or in non-cooperative games ([Nash equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium) e.g: rock-paper-scissors).
 <br>
 Stochastic policy formally: $$\pi(s,a) = \max_{\pi}\mathbb{E}[G \mid \pi]$$
 
